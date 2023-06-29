@@ -1,43 +1,3 @@
-## 实验内容
-
-**学生成绩管理系统**
-某班有最多不超过30人(具体人数由键盘输入)参加期末考试，最多不超过6门（具体门数由键盘输入）。请使用结构体数组、排序查找算法以及模块化程序设计方法编程实现如下菜单驱动的学生成绩管理系统：
-(1) 输入每个学生的学号、姓名和各科考试成绩；
-(2) 计算每门课程的总分和平均分；
-(3) 计算每个学生的总分和平均分；
-(4) 按每个学生的总分由高到低排出名次表；
-(5) 按每个学生的总分由低到高排出名次表；
-(6) 按学号由小到大排出成绩表；
-(7) 按姓名的字典顺序排出成绩表；
-(8) 按学号查询学生排名及其考试成绩；
-(9) 按姓名查询学生排名及其考试成绩；
-(10) 按优秀(90~100分)、良好(80~89分)、中等(70~79分)、及格(60~69分)、不及格(0~59分)5个类别，对每门课程分别统计每个类别的人数以及所占的百分比；
-(11) 输出每个学生的学号、姓名、各科考试成绩，以及每门课程的总分和平均分；
-(12) 将每个学生的记录信息写入文件；
-(13) 从文件中读出每个学生的记录信息并显示。
-
-## 实验要求
-
-要求程序运行后先显示如下菜单，并提示用户输入选项
-
-1. Input record
-2. Calculate total and average score of every course
-3. Calculate total and average score of every student
-4. Sort in descending order by total score of every student
-5. Sort in ascending order by total score of every student
-6. Sort in ascending order by number
-7. Sort in dictionary order by name
-8. Search by number
-9. Search by name
-10. Statistic analysis for every course
-11. List record
-12. Write to a file
-13. Read from file
-0. Exit
-Please enter your choice:
-
-## 实验源码
-```C
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <string.h>
@@ -587,5 +547,3 @@ void ReadfromFile(STU STUDENTS[], int *StuNum, int *CourseNum)
     }
     fclose(fp);
 }
-
-```
